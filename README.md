@@ -1,37 +1,53 @@
-# Marketing-Campaign-Analysis
-Data
-The dataset Marketing_analysis_dataset.csv contains information about 2206 customers of XYZ company, including customer profiles, product preferences, 
-campaign successes/failures, and channel performance.
+# Marketing Campaign Analysis
+## Introduction
+The marketing campaign analysis aims to predict whether customers will respond positively or negatively to a marketing campaign. This analysis is vital for businesses to optimize their marketing strategies and allocate resources effectively. In this project, we analyze various features of customers to predict their response to marketing campaigns.
 
-Sections
-# 1. Exploratory Data Analysis (EDA)
-Check for null values and outliers
-Data wrangling and handling
-Transformation of variables
-Engineering useful variables
-Visualization of patterns and anomalies in the data
-# 2. Statistical Analysis
-Regression analysis to answer specific questions
-Propose data-driven action recommendations
-Interpret results with non-statistical jargon
-Perform statistical tests to justify recommendations
-# 3. Data Visualization
-Plotting and visualizing the analysis results
-Identifying the most successful marketing campaign
-Understanding the average customer profile
-Analyzing the performance of products and channels
-# 4. CMO Recommendations
-Data-driven recommendations/suggestions to the Chief Marketing Officer (CMO)
-Tie recommendations to the analysis in Sections 1-3
-Focus on marketing concepts such as targets, channels, or products
-Evaluation
-# Data Exploration:
-Proper data wrangling and analysis
-Well-analyzed data with useful visualizations
-Insightful conclusions and thought-provoking insights
-Statistical Analysis:
-Correct use of statistical tests
-Clear interpretation of statistical output without jargon
-# Business Recommendation:
-Data-driven recommendations tied to analysis
-Focused on marketing concepts such as targets, channels, or products
+## Data
+The dataset used for this analysis contains information about a marketing campaign, including details about customers and their responses. The dataset includes features such as:
+Age
+Income
+Marital status
+Education
+Previous marketing campaign responses
+The dataset is preprocessed to handle missing values and categorical features.
+
+## Tools and Techniques Used
+Python Libraries:
+Pandas, NumPy for data manipulation
+Matplotlib, Seaborn for data visualization
+Scikit-learn for machine learning models
+TensorFlow and Keras for deep learning models
+Streamlit for building the web application
+
+## Data Preprocessing
+Missing values in the 'Income' column are imputed with the mean value.
+Categorical features are one-hot encoded.
+Exploratory Data Analysis (EDA)
+Correlation heatmap is used to understand the relationships between different features.
+Histograms and pie charts are used to visualize the distribution of the target variable and other important features.
+
+## Model Selection
+Logistic Regression:
+GridSearchCV is used to find the best hyperparameters.
+Support Vector Classification (SVC):
+GridSearchCV is used to find the best hyperparameters.
+Random Forest:
+GridSearchCV is used to find the best hyperparameters.
+XGBoost:
+GridSearchCV is used to find the best hyperparameters.
+Deep Neural Network (DNN):
+A simple DNN model is defined using TensorFlow and Keras.
+
+## Model Evaluation
+Train and test splits are performed.
+Standardization is applied using StandardScaler.
+Models are evaluated using classification_report.
+Cross-validation scores are calculated.
+
+## Model Deployment
+A Streamlit web application is built to deploy the trained models.
+Users can upload a CSV file containing customer data.
+The selected model makes predictions on the uploaded data.
+Predictions are displayed to the user.
+## Conclusion
+This project provides a comprehensive analysis of marketing campaign data, including data preprocessing, EDA, model selection, evaluation, and deployment. The Streamlit web application allows users to make predictions on their own data, helping businesses optimize their marketing strategies.
